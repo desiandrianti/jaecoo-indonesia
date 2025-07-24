@@ -59,30 +59,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Hero indicators functionality
-    const indicators = document.querySelectorAll('.indicator');
+    const slides = document.querySelectorAll('.hero-slide');
+    const indicators = document.querySelectorAll('.hero-indicator');
     let currentSlide = 0;
-    const totalSlides = indicators.length;
-
-    function updateIndicators() {
-        indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === currentSlide);
+    
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
         });
     }
-
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', function() {
-            currentSlide = index;
-            updateIndicators();
+    
+    if (slides.length > 0 && indicators.length > 0) {
+        showSlide(currentSlide); // tampilkan slide awal
+    
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', function() {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
         });
-    });
-
-    // Auto-rotate hero indicators
-    if (indicators.length > 0) {
+    
         setInterval(function() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateIndicators();
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
         }, 5000);
     }
+    
 
     // Form validation (for contact page)
     const contactForm = document.getElementById('contact-form');
