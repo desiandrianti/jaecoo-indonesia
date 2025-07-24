@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h2>JAECOO</h2>
-                </div>
+<!-- Header -->
+<header class="header">
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <img src="https://jaecoo.id/_next/image?url=%2Fblack-logo.png&w=256&q=75" alt="Jaecoo Logo" style="height: 40px;">
+                </a>
+            </div>
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link active" data-translate="nav_home">Home</a></li>
@@ -38,82 +40,176 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title" data-translate="hero_title">NEW LUXURY REIMAGINED</h1>
-            <p class="hero-subtitle" data-translate="hero_subtitle">Empowered for Adventure, and Enhanced with Intelligent Technology.</p>
-            <div class="hero-buttons">
-                <a href="models.html" class="btn btn-primary" data-translate="hero_button_j7">JAECOO J7 SHS</a>
-                <a href="contact.html" class="btn btn-secondary" data-translate="hero_button_test">BOOK TEST DRIVE</a>
-            </div>
-        </div>
-        <div class="hero-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-            <span class="indicator"></span>
-        </div>
-    </section>
+    <script>
+        const toggle = document.getElementById('nav-toggle');
+        const menu = document.getElementById('nav-menu');
+    
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+    
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active"
+           style="background-image: url('https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fhome_shs_new_3512a6543d.png&w=3840&q=75');"
+           data-title="NEW LUXURY REIMAGINED"
+           data-subtitle="Empowered for Adventure, and Enhanced with Intelligent Technology."
+           data-button="JAECOO J7 SHS">
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="hero-slide"
+           style="background-image: url('https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fhome_j7_new_187228bf52.png&w=3840&q=75');"
+           data-title="OFF-ROAD CAPABLE SUV"
+           data-subtitle="Empowered for Adventure, and Enhanced with Intelligent Technology."
+           data-button="JAECOO J7 AWD">
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="hero-slide"
+           style="background-image: url('https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Right_Side_Head_Up_edit_image_67b94a67d4.jpg&w=3840&q=75');"
+           data-title="FIRST CLASS OFF-ROAD"
+           data-subtitle="Empowered for Adventure, and Enhanced with Intelligent Technology."
+           data-button="JAECOO J8 ARDIS">
+      </div>
+    </div>
+  
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <h1 class="hero-title">NEW LUXURY REIMAGINED</h1>
+      <p class="hero-subtitle">Empowered for Adventure, and Enhanced with Intelligent Technology.</p>
+      <div class="hero-buttons">
+        <a href="models.html" class="btn btn-primary" id="model-btn">JAECOO J7 SHS</a>
+        <a href="contact.html" class="btn btn-secondary">BOOK TEST DRIVE</a>
+      </div>
+    </div>
+  
+    <!-- Indicators -->
+    <div class="hero-indicators">
+      <span class="hero-indicator active"></span>
+      <span class="hero-indicator"></span>
+      <span class="hero-indicator"></span>
+    </div>
+  </section>
+  
+  <!-- Script -->
+  <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const titleEl = document.querySelector('.hero-title');
+    const subtitleEl = document.querySelector('.hero-subtitle');
+    const modelBtn = document.getElementById('model-btn');
+    const indicators = document.querySelectorAll('.hero-indicator');
+  
+    let currentSlide = 0;
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        indicators[i].classList.toggle('active', i === index);
+      });
+  
+      const title = slides[index].getAttribute('data-title');
+      const subtitle = slides[index].getAttribute('data-subtitle');
+      const buttonText = slides[index].getAttribute('data-button');
+  
+      titleEl.textContent = title;
+      subtitleEl.textContent = subtitle;
+      modelBtn.textContent = buttonText;
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    setInterval(nextSlide, 5000);
+  
+    indicators.forEach((dot, idx) => {
+      dot.addEventListener('click', () => {
+        currentSlide = idx;
+        showSlide(currentSlide);
+      });
+    });
+  </script>  
+
 
     <!-- J7 Section -->
     <section class="j7-section">
-        <div class="j7-background">
-            <div class="j7-overlay"></div>
+        <div class="j7-overlay"></div>
+      
+        <div class="j7-content top">
+          <h2 class="j7-title">JAECOO J7</h2>
         </div>
-        <div class="j7-content">
-            <h2 class="j7-title" data-translate="j7_title">JAECOO J7</h2>
-            <a href="models.html" class="btn btn-primary" data-translate="j7_button">J7 SHS</a>
+      
+        <div class="j7-content bottom">
+          <a href="models.html" class="btn btn-primary">J7 SHS</a>
         </div>
-    </section>
+      </section>
+      
 
     <!-- About Section -->
-    <section class="about-section">
-        <div class="about-background">
-            <div class="about-overlay"></div>
-        </div>
-        <div class="about-content">
-            <p class="about-text" data-translate="about_text">
-                Combining refined and elegant design with extraordinary performance, 
-                JAECOO revolutionizes the urban market, setting new trends and 
-                dominating even the most extreme terrains.
-            </p>
-        </div>
-    </section>
+<section class="about-section">
+    <div class="about-background"></div>
+    <div class="about-content">
+        <p class="about-text" data-translate="about_text">
+            Combining refined and elegant design with extraordinary performance, 
+            JAECOO revolutionizes the urban market, setting new trends and 
+            dominating even the most extreme terrains.
+        </p>
+    </div>
+</section>
 
-    <!-- Super Hybrid Section -->
-    <section class="super-hybrid-section">
-        <div class="super-hybrid-content">
-            <a href="super-hybrid.html" class="btn btn-primary" data-translate="super_hybrid_button">SUPER HYBRID SYSTEM</a>
-        </div>
-    </section>
+<!-- Super Hybrid Section -->
+<section class="super-hybrid-section">
+    <div class="super-hybrid-video">
+        <video autoplay muted loop playsinline>
+            <source src="https://cms.jaecoo.id/uploads/shs_education_ba9d8e5e60.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="super-hybrid-content">
+        <a href="super-hybrid.html" class="btn btn-primary" data-translate="super_hybrid_button">SUPER HYBRID SYSTEM</a>
+    </div>
+</section>
 
+<!-- FontAwesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">
-                <h2>JAECOO</h2>
-            </div>
-            <div class="footer-social">
-                <a href="https://instagram.com/nsandyjaecoosurabaya" class="social-link" target="_blank">Instagram</a>
-                <a href="https://tiktok.com/@nsandyjaecoosurabaya" class="social-link" target="_blank">TikTok</a>
-            </div>
-            <div class="footer-models">
-                <div class="model-card">
-                    <div class="model-image model-j8-ardis"></div>
-                    <h3 data-translate="model_j8_ardis">JAECOO J8 ARDIS</h3>
-                </div>
-                <div class="model-card">
-                    <div class="model-image model-j8-shs"></div>
-                    <h3 data-translate="model_j8_shs">JAECOO J8 SHS ARDIS</h3>
-                </div>
-                <div class="model-card">
-                    <div class="model-image model-j7-shs"></div>
-                    <h3 data-translate="model_j7_shs">JAECOO J7 SHS</h3>
-                </div>
-            </div>
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img src="https://jaecoo.id/_next/image?url=%2Fgrey-logo.png&w=640&q=75" alt="JAECOO Logo" class="footer-logo-img" />
+          </div>
+      
+          <!-- Sosial Media -->
+          <div class="footer-social">
+            <a href="https://www.instagram.com/jaecoo.indonesia" target="_blank" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@jaecoo.indonesia" target="_blank" class="social-link" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+      
+          <!-- Model Mobil -->
+          <div class="footer-models">
+            <a href="models.html#model-j8-ardis" class="model-card">
+                <div class="model-image model-j8-ardis"></div>
+                <h3 data-translate="model_j8_ardis">JAECOO J8 ARDIS</h3>
+            </a>
+            <a href="models.html#model-j8-shs" class="model-card">
+                <div class="model-image model-j8-shs"></div>
+                <h3 data-translate="model_j8_shs">JAECOO J8 SHS ARDIS</h3>
+            </a>
+            <a href="models.html#model-j7-shs" class="model-card">
+                <div class="model-image model-j7-shs"></div>
+                <h3 data-translate="model_j7_shs">JAECOO J7 SHS</h3>
+            </a>
+        </div>                  
             <div class="footer-nav">
                 <a href="index.html" class="footer-link" data-translate="footer_home">HOME</a>
                 <a href="super-hybrid.html" class="footer-link" data-translate="footer_super_hybrid">SUPER HYBRID SYSTEM</a>
