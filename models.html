@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Models - JAECOO Surabaya</title>
-    <link rel="stylesheet" href="models.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -58,7 +58,7 @@
 
     <!-- Models Section -->
     <section class="models-section">
-        <div class="container">
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Available Models -->
             <div class="models-category">
                 <h2 class="category-title">Available Models</h2>
@@ -451,26 +451,53 @@
         </div>
     </section>
 
+<!-- FontAwesome Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="https://jaecoo.id/_next/image?url=%2Fblack-logo.png&w=256&q=75" alt="Jaecoo Logo" style="height: 40px;">
-                    <p>Urban Luxury Reimagined</p>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>Phone: +62 21 1234 5678</p>
-                    <p>Email: info@jaecoo.id</p>
-                </div>
-                <div class="footer-info">
-                    <p>&copy; 2024 JAECOO Indonesia. All rights reserved.</p>
-                </div>
+        <div class="footer-content">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img src="https://jaecoo.id/_next/image?url=%2Fgrey-logo.png&w=640&q=75" alt="JAECOO Logo" class="footer-logo-img" />
+          </div>
+      
+          <!-- Sosial Media -->
+          <div class="footer-social">
+            <a href="https://www.instagram.com/jaecoo.indonesia" target="_blank" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@jaecoo.indonesia" target="_blank" class="social-link" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+      
+          <!-- Model Mobil -->
+          <div class="footer-models">
+            <a href="models.html#model-j8-ardis" class="model-card">
+                <div class="model-image model-j8-ardis"></div>
+                <h3 data-translate="model_j8_ardis">JAECOO J8 ARDIS</h3>
+            </a>
+            <a href="models.html#model-j8-shs" class="model-card">
+                <div class="model-image model-j8-shs"></div>
+                <h3 data-translate="model_j8_shs">JAECOO J8 SHS ARDIS</h3>
+            </a>
+            <a href="models.html#model-j7-shs" class="model-card">
+                <div class="model-image model-j7-shs"></div>
+                <h3 data-translate="model_j7_shs">JAECOO J7 SHS</h3>
+            </a>
+        </div>                  
+            <div class="footer-nav">
+                <a href="index.html" class="footer-link" data-translate="footer_home">HOME</a>
+                <a href="super-hybrid.html" class="footer-link" data-translate="footer_super_hybrid">SUPER HYBRID SYSTEM</a>
+                <a href="find-dealer.html" class="footer-link" data-translate="footer_find_dealer">FIND A DEALER</a>
+                <a href="contact.html" class="footer-link" data-translate="footer_contact">CONTACT</a>
             </div>
         </div>
     </footer>
 
+
+    <script src="assets/js/final-language-system.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         function changeCarColor(modelId, color) {
             // Remove active class from all color buttons in this model
