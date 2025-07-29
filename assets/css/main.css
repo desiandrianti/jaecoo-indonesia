@@ -392,119 +392,188 @@ body {
     font-size: 1rem;
 }
 
-/* FOOTER STYLES */
+/* FOOTER STYLES - Updated to match jaecoo.id layout */
 .footer {
-    background: #000; /* Hitam elegan */
+    background: #000;
     color: #fff;
-    padding: 4rem 2rem 2rem;
-  }
-  
-  .footer-content {
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
-  }
-  
-  .footer-logo-img {
-    height: 20px;
-    margin-bottom: 2rem;
-  }
-  
-  /* Sosial Media */
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .social-link {
-    font-size: 1.8rem;
-    color: #fff;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .social-link:hover {
-    color: #2c5f5d;
-    transform: scale(1.2);
-  }
-  
-  /* Mobil Section */
-  .footer-models {
+    padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Left Column - Logo */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo-img {
+    height: 40px;
+    margin-bottom: 2rem;
+    filter: brightness(0) invert(1);
+}
+
+/* Center Column - Models */
+.footer-models {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  /* Hapus garis bawah link & atur warna tetap putih */
-  .footer-models .model-card {
+    justify-items: center;
+}
+
+.footer-models .model-card {
     text-align: center;
     transition: transform 0.3s ease;
     text-decoration: none;
     color: inherit;
-  }
-  
-  .footer-models .model-card a,
-  .footer-models .model-card a:visited,
-  .footer-models .model-card a:hover,
-  .footer-models .model-card a:focus {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .footer-models .model-card:hover {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-models .model-card:hover {
     transform: translateY(-5px);
-  }
-  
-  /* Gambar Mobil */
-  .model-card .model-image {
-    height: 160px;
+}
+
+.model-card .model-image {
+    height: 120px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 1rem;
-    border-radius: 12px;
-  }
-  
-  .model-j8-ardis {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.model-j8-ardis {
     background-image: url('https://cms.jaecoo.id/uploads/J8_AWD_8b95bcc0c0.webp');
-  }
-  .model-j8-shs {
+}
+
+.model-j8-shs {
     background-image: url('https://cms.jaecoo.id/uploads/j8_c40ca7c8eb.png');
-  }
-  .model-j7-shs {
+}
+
+.model-j7-shs {
     background-image: url('https://cms.jaecoo.id/uploads/j7_phev_9f5d2ccab7.png');
-  }
-  
-  /* Teks Model Mobil */
-  .model-card h3 {
-    font-size: 1rem;
-    font-weight: 600;
+}
+
+.model-card h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
     color: #fff;
     text-decoration: none;
-  }
-  
-  /* Footer Link Navigasi */
-  .footer-nav {
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Right Column - Social Media */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #2c5f5d;
+    transform: scale(1.1);
+}
+
+/* Bottom Navigation */
+.footer-nav {
+    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     flex-wrap: wrap;
-  }
-  
-  .footer-link {
-    color: #fff;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 0.9rem;
     transition: color 0.3s ease;
-  }
-  
-  .footer-link:hover {
-    color: #2c5f5d;
-  }
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        align-items: center;
+    }
+    
+    .footer-models {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-social {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .footer-nav {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-content {
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .model-card .model-image {
+        height: 100px;
+    }
+    
+    .model-card h3 {
+        font-size: 0.8rem;
+    }
+}
   
   
   /* Scroll Smooth */
@@ -1768,12 +1837,17 @@ body {
 
 /* Models Section */
 .models-section {
-    padding: 80px 0;
+    padding: 40px 0;
     background: #f8f9fa;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 .models-category {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .category-title {
