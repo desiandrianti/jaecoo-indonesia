@@ -4,537 +4,429 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Models - JAECOO Surabaya</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="/">
-                        <img src="https://jaecoo.id/_next/image?url=%2Fblack-logo.png&w=256&q=75" alt="Jaecoo Logo" style="height: 40px;">
-                    </a>
+    
+        <!-- Header -->
+        <header class="header">
+          <nav class="nav">
+              <div class="nav-container">
+                  <div class="nav-logo">
+                      <a href="/">
+                          <img src="https://jaecoo.id/_next/image?url=%2Fblack-logo.png&w=256&q=75" alt="Jaecoo Logo" style="height: 40px;">
+                      </a>
+                  </div>
+                    <div class="nav-menu" id="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" class="nav-link" data-translate="nav_home">Home</a></li>
+                            <li class="nav-item"><a href="models.html" class="nav-link active" data-translate="nav_models">Models</a></li>
+                            <li class="nav-item"><a href="super-hybrid.html" class="nav-link" data-translate="nav_super_hybrid">Super Hybrid System</a></li>
+                            <li class="nav-item"><a href="find-dealer.html" class="nav-link" data-translate="nav_find_dealer">Find a Dealer</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-toggle" id="nav-toggle">
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                    </div>
                 </div>
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html" class="nav-link" data-translate="nav_home">Home</a></li>
-                        <li class="nav-item"><a href="models.html" class="nav-link active" data-translate="nav_models">Models</a></li>
-                        <li class="nav-item"><a href="super-hybrid.html" class="nav-link" data-translate="nav_super_hybrid">Super Hybrid System</a></li>
-                        <li class="nav-item"><a href="find-dealer.html" class="nav-link" data-translate="nav_find_dealer">Find a Dealer</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-language">
-                    <span class="lang-active">EN</span>
-                    <span class="lang-divider">|</span>
-                    <span class="lang-option">ID</span>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
+            </nav>
+        </header>
+    
+    
+      <!-- Hero Section -->
     <section class="models-hero">
         <div class="models-hero-background">
-            <img 
-                src="https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2F20250208_232304_be3dcba235.jpeg&w=3840&q=75" 
-                alt="JAECOO Models" 
-                class="models-hero-img"
-            >
-            <div class="models-hero-overlay"></div>
-            <div class="models-hero-content">
-                <h1 class="models-hero-title">OUR MODELS</h1>
-                <p class="models-hero-subtitle">Discover the Perfect JAECOO for Your Journey</p> 
-            </div>
+          <img 
+            src="https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2F20250208_232304_be3dcba235.jpeg&w=3840&q=75" 
+            alt="Models Hero" 
+            class="models-hero-img"
+          >
+          <div class="models-hero-overlay"></div>
+          <div class="models-hero-content">
+            <h1 class="models-hero-title">OUR MODELS</h1>
+            <p class="models-hero-subtitle">Discover the Perfect JAECOO for Your Journey</p> 
+          </div>
         </div>
-    </section>
+      </section>
+ 
+    
 
-    <!-- Models Section -->
-    <section class="models-section">
-        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Available Models -->
-            <div class="models-category">
-                <h2 class="category-title">Available Models</h2>
-                
-                <!-- JAECOO J7 SHS -->
-                <div class="model-card">
-                    <div class="model-header">
-                        <h3 class="model-name">JAECOO J7 SHS</h3>
-                        <p class="model-type">Super Hybrid System</p>
-                    </div>
-                    
-                    <div class="model-image-section">
-                        <div class="color-selector">
-                            <button class="color-btn active" data-color="silver" onclick="changeCarColor('j7-shs', 'silver')">
-                                <span class="color-dot silver"></span>
-                                <span class="color-name">Silver</span>
-                            </button>
-                            <button class="color-btn" data-color="white" onclick="changeCarColor('j7-shs', 'white')">
-                                <span class="color-dot white"></span>
-                                <span class="color-name">White</span>
-                            </button>
-                            <button class="color-btn" data-color="gray" onclick="changeCarColor('j7-shs', 'gray')">
-                                <span class="color-dot gray"></span>
-                                <span class="color-name">Gray</span>
-                            </button>
-                            <button class="color-btn" data-color="black" onclick="changeCarColor('j7-shs', 'black')">
-                                <span class="color-dot black"></span>
-                                <span class="color-name">Black</span>
-                            </button>
-                        </div>
-                        
-                        <div class="car-image-container">
-                            <img id="j7-shs-img" src="https://cms.jaecoo.id/uploads/Eksterior_SHS_copy_2_e5c5bce8df.webp" alt="JAECOO J7 SHS" class="car-image">
-                        </div>
-                    </div>
-                    
-                    <div class="model-price">
-                        <div class="price-tag">
-                            <span class="price-label">Starting Price</span>
-                            <span class="price-amount">IDR 499.900.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="model-specs">
-                        <h4 class="specs-title">Specifications</h4>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">Max Range</span>
-                                <span class="spec-value">1300km</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power Train</span>
-                                <span class="spec-value">1,5T+1DHT</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">0-100km/h</span>
-                                <span class="spec-value">8,5s</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Battery</span>
-                                <span class="spec-value">18,3kWh</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary">Test Drive</button>
-                    </div>
-                </div>
-
-                <!-- JAECOO J7 AWD -->
-                <div class="model-card">
-                    <div class="model-header">
-                        <h3 class="model-name">JAECOO J7 AWD</h3>
-                        <p class="model-type">All Wheel Drive</p>
-                    </div>
-                    
-                    <div class="model-image-section">
-                        <div class="color-selector">
-                            <button class="color-btn active" data-color="silver" onclick="changeCarColor('j7-awd', 'silver')">
-                                <span class="color-dot silver"></span>
-                                <span class="color-name">Silver</span>
-                            </button>
-                            <button class="color-btn" data-color="white" onclick="changeCarColor('j7-awd', 'white')">
-                                <span class="color-dot white"></span>
-                                <span class="color-name">White</span>
-                            </button>
-                            <button class="color-btn" data-color="gray" onclick="changeCarColor('j7-awd', 'gray')">
-                                <span class="color-dot gray"></span>
-                                <span class="color-name">Gray</span>
-                            </button>
-                            <button class="color-btn" data-color="black" onclick="changeCarColor('j7-awd', 'black')">
-                                <span class="color-dot black"></span>
-                                <span class="color-name">Black</span>
-                            </button>
-                        </div>
-                        
-                        <div class="car-image-container">
-                            <img id="j7-awd-img" src="https://cms.jaecoo.id/uploads/Eksterior_SHS_copy_2_e5c5bce8df.webp" alt="JAECOO J7 AWD" class="car-image">
-                        </div>
-                    </div>
-                    
-                    <div class="model-price">
-                        <div class="price-tag">
-                            <span class="price-label">Starting Price</span>
-                            <span class="price-amount">IDR 459.900.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="model-specs">
-                        <h4 class="specs-title">Specifications</h4>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">Engine</span>
-                                <span class="spec-value">1.6T GDI</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power</span>
-                                <span class="spec-value">147kW</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">0-100km/h</span>
-                                <span class="spec-value">7,8s</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Drive</span>
-                                <span class="spec-value">AWD</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary">Test Drive</button>
-                    </div>
-                </div>
-
-                <!-- JAECOO J8 ARDIS -->
-                <div class="model-card">
-                    <div class="model-header">
-                        <h3 class="model-name">JAECOO J8 ARDIS</h3>
-                        <p class="model-type">Premium SUV</p>
-                    </div>
-                    
-                    <div class="model-image-section">
-                        <div class="color-selector">
-                            <button class="color-btn active" data-color="silver" onclick="changeCarColor('j8-ardis', 'silver')">
-                                <span class="color-dot silver"></span>
-                                <span class="color-name">Silver</span>
-                            </button>
-                            <button class="color-btn" data-color="white" onclick="changeCarColor('j8-ardis', 'white')">
-                                <span class="color-dot white"></span>
-                                <span class="color-name">White</span>
-                            </button>
-                            <button class="color-btn" data-color="gray" onclick="changeCarColor('j8-ardis', 'gray')">
-                                <span class="color-dot gray"></span>
-                                <span class="color-name">Gray</span>
-                            </button>
-                            <button class="color-btn" data-color="black" onclick="changeCarColor('j8-ardis', 'black')">
-                                <span class="color-dot black"></span>
-                                <span class="color-name">Black</span>
-                            </button>
-                        </div>
-                        
-                        <div class="car-image-container">
-                            <img id="j8-ardis-img" src="https://cms.jaecoo.id/uploads/Eksterior_SHS_copy_2_e5c5bce8df.webp" alt="JAECOO J8 ARDIS" class="car-image">
-                        </div>
-                    </div>
-                    
-                    <div class="model-price">
-                        <div class="price-tag">
-                            <span class="price-label">Starting Price</span>
-                            <span class="price-amount">IDR 649.900.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="model-specs">
-                        <h4 class="specs-title">Specifications</h4>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">Engine</span>
-                                <span class="spec-value">2.0T GDI</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power</span>
-                                <span class="spec-value">187kW</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">0-100km/h</span>
-                                <span class="spec-value">7,2s</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Seats</span>
-                                <span class="spec-value">7 Seater</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary">Test Drive</button>
-                    </div>
-                </div>
-
-                <!-- JAECOO J8 SHS ARDIS -->
-                <div class="model-card">
-                    <div class="model-header">
-                        <h3 class="model-name">JAECOO J8 SHS ARDIS</h3>
-                        <p class="model-type">Super Hybrid System</p>
-                    </div>
-                    
-                    <div class="model-image-section">
-                        <div class="color-selector">
-                            <button class="color-btn active" data-color="silver" onclick="changeCarColor('j8-shs-ardis', 'silver')">
-                                <span class="color-dot silver"></span>
-                                <span class="color-name">Silver</span>
-                            </button>
-                            <button class="color-btn" data-color="white" onclick="changeCarColor('j8-shs-ardis', 'white')">
-                                <span class="color-dot white"></span>
-                                <span class="color-name">White</span>
-                            </button>
-                            <button class="color-btn" data-color="gray" onclick="changeCarColor('j8-shs-ardis', 'gray')">
-                                <span class="color-dot gray"></span>
-                                <span class="color-name">Gray</span>
-                            </button>
-                            <button class="color-btn" data-color="black" onclick="changeCarColor('j8-shs-ardis', 'black')">
-                                <span class="color-dot black"></span>
-                                <span class="color-name">Black</span>
-                            </button>
-                        </div>
-                        
-                        <div class="car-image-container">
-                            <img id="j8-shs-ardis-img" src="https://cms.jaecoo.id/uploads/Eksterior_SHS_copy_2_e5c5bce8df.webp" alt="JAECOO J8 SHS ARDIS" class="car-image">
-                        </div>
-                    </div>
-                    
-                    <div class="model-price">
-                        <div class="price-tag">
-                            <span class="price-label">Starting Price</span>
-                            <span class="price-amount">IDR 699.900.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="model-specs">
-                        <h4 class="specs-title">Specifications</h4>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">Max Range</span>
-                                <span class="spec-value">1400km</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power Train</span>
-                                <span class="spec-value">2.0T+DHT</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">0-100km/h</span>
-                                <span class="spec-value">6,8s</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Battery</span>
-                                <span class="spec-value">24,8kWh</span>
-                            </div>
-                        </div>
-                        <button class="btn-primary">Test Drive</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pre Booking Models -->
-            <div class="models-category">
-                <h2 class="category-title">Pre Booking Models</h2>
-                
-                <!-- JAECOO J5 EV Premium -->
-                <div class="model-card prebooking">
-                    <div class="model-header">
-                        <h3 class="model-name">JAECOO J5 EV Premium</h3>
-                        <p class="model-type">Full Electric Premium</p>
-                        <span class="prebooking-badge">Pre Booking</span>
-                    </div>
-                    
-                    <div class="model-image-section">
-                        <div class="color-selector">
-                            <button class="color-btn active" data-color="silver" onclick="changeCarColor('j5-ev-premium', 'silver')">
-                                <span class="color-dot silver"></span>
-                                <span class="color-name">Silver</span>
-                            </button>
-                            <button class="color-btn" data-color="white" onclick="changeCarColor('j5-ev-premium', 'white')">
-                                <span class="color-dot white"></span>
-                                <span class="color-name">White</span>
-                            </button>
-                            <button class="color-btn" data-color="gray" onclick="changeCarColor('j5-ev-premium', 'gray')">
-                                <span class="color-dot gray"></span>
-                                <span class="color-name">Gray</span>
-                            </button>
-                            <button class="color-btn" data-color="black" onclick="changeCarColor('j5-ev-premium', 'black')">
-                                <span class="color-dot black"></span>
-                                <span class="color-name">Black</span>
-                            </button>
-                        </div>
-                        
-                        <div class="car-image-container">
-                            <img id="j5-ev-premium-img" src="https://cms.jaecoo.id/uploads/Eksterior_SHS_copy_2_e5c5bce8df.webp" alt="JAECOO J5 EV Premium" class="car-image">
-                        </div>
-                    </div>
-                    
-                    <div class="model-price">
-                        <div class="price-tag prebooking-price">
-                            <span class="price-label">Pre Booking Price</span>
-                            <span class="price-amount">IDR 549.900.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="model-specs">
-                        <h4 class="specs-title">Specifications</h4>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">Range</span>
-                                <span class="spec-value">450km</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power</span>
-                                <span class="spec-value">150kW</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">0-100km/h</span>
-                                <span class="spec-value">6,5s</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Battery</span>
-                                <span class="spec-value">65kWh</span>
-                            </div>
-                        </div>
-                        <button class="btn-secondary">Pre Booking</button>
-                    </div>
-                </div>
-
-                <!-- JAECOO J5 EV Regular -->
-                <div class="model-card prebooking">
-                    <div class="model-header">
-                        <h3 class="model-name">JAECOO J5 EV Regular</h3>
-                        <p class="model-type">Full Electric Standard</p>
-                        <span class="prebooking-badge">Pre Booking</span>
-                    </div>
-                    
-                    <div class="model-image-section">
-                        <div class="color-selector">
-                            <button class="color-btn active" data-color="silver" onclick="changeCarColor('j5-ev-regular', 'silver')">
-                                <span class="color-dot silver"></span>
-                                <span class="color-name">Silver</span>
-                            </button>
-                            <button class="color-btn" data-color="white" onclick="changeCarColor('j5-ev-regular', 'white')">
-                                <span class="color-dot white"></span>
-                                <span class="color-name">White</span>
-                            </button>
-                            <button class="color-btn" data-color="gray" onclick="changeCarColor('j5-ev-regular', 'gray')">
-                                <span class="color-dot gray"></span>
-                                <span class="color-name">Gray</span>
-                            </button>
-                            <button class="color-btn" data-color="black" onclick="changeCarColor('j5-ev-regular', 'black')">
-                                <span class="color-dot black"></span>
-                                <span class="color-name">Black</span>
-                            </button>
-                        </div>
-                        
-                        <div class="car-image-container">
-                            <img id="j5-ev-regular-img" src="https://cms.jaecoo.id/uploads/Eksterior_SHS_copy_2_e5c5bce8df.webp" alt="JAECOO J5 EV Regular" class="car-image">
-                        </div>
-                    </div>
-                    
-                    <div class="model-price">
-                        <div class="price-tag prebooking-price">
-                            <span class="price-label">Pre Booking Price</span>
-                            <span class="price-amount">IDR 449.900.000</span>
-                        </div>
-                    </div>
-                    
-                    <div class="model-specs">
-                        <h4 class="specs-title">Specifications</h4>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">Range</span>
-                                <span class="spec-value">380km</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power</span>
-                                <span class="spec-value">120kW</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">0-100km/h</span>
-                                <span class="spec-value">7,2s</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Battery</span>
-                                <span class="spec-value">52kWh</span>
-                            </div>
-                        </div>
-                        <button class="btn-secondary">Pre Booking</button>
-                    </div>
-                </div>
-            </div>
+  <!-- Models Available -->
+  <div class="models-category">
+    <h2 class="category-title">Available Models</h2>
+</div>
+  <!-- J7 Models Section -->
+  <div class="models-header" id="models-j7-shs">
+          <h3 class="models-name">JAECOO J7 SHS</h3>
+          <p class="models-type">Super Hybrid System = Super HEV + EV</p>
         </div>
-    </section>
+        <div class="car-image-container">
+          <img src="https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FEksterior_SHS_copy_2_e5c5bce8df.webp&w=3840&q=75" alt="JAECOO J7 SHS" class="car-image">
+  </div>
+        <div class="models-price">
+          <div class="price-tag">
+            <span class="price-label">Price</span>
+            <span class="price-amount">IDR 499.900.000</span>
+          </div>
+        </div>
 
+        <div class="models-grid">
+            <div class="models-card">
+        <div class="models-specs">
+          <h4 class="specs-title">Specifications</h4>
+          <div class="specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Max. Range</span>
+              <span class="spec-value">1300km</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Max. Speed</span>
+              <span class="spec-value">180km/h</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Battery Capacity</span>
+              <span class="spec-value">18,3kWh</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Wheelbase</span>
+              <span class="spec-value">2.676mm</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Max. Power</span>
+              <span class="spec-value">145kW</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Power Train</span>
+              <span class="spec-value">1,5T+1DHT</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">0-100km/h</span>
+              <span class="spec-value">8,5s</span>
+            </div>
+          </div>
+          <a href="contact.html?model=J7 SHS" class="btn btn-primary">Test Drive</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+      <!-- JAECOO J7 AWD -->
+          <div class="models-header">
+            <h3 class="models-name">JAECOO J7 AWD</h3>
+            <p class="models-type">Delicate Off-Road SUV</p>
+        </div>
+        <div class="car-image-container">
+          <img src="https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fj7_eksterior_123880817e.png&w=3840&q=75" alt="JAECOO J7 AWD" class="car-image">
+        </div>
+        <div class="models-price">
+          <div class="price-tag">
+            <span class="price-label">Price</span>
+            <span class="price-amount">IDR 549.900.000</span>
+          </div>
+        </div>
+
+        <div class="models-grid">
+            <div class="models-card">
+        <div class="models-specs">
+          <h4 class="specs-title">Specifications</h4>
+          <div class="specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Max. Power</span>
+              <span class="spec-value">136,5kw/183hp</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Max. Speed</span>
+              <span class="spec-value">180km/h</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Sensor</span>
+              <span class="spec-value">8 Sensor</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Wheelbase</span>
+              <span class="spec-value">2.672mm</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Torque</span>
+              <span class="spec-value">275N.m</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Power Train</span>
+              <span class="spec-value">1,6T+7DHT</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">0-100km/h</span>
+              <span class="spec-value">9,2s</span>
+            </div>
+          </div>
+          <a href="contact.html?model=J7 SHS" class="btn btn-primary">Test Drive</a>
+        </div>
+      </div>
+    </div> <!-- end models-grid -->
+  </div> <!-- end models-category -->
+
+
+<!-- Pre Booking Section -->
+<div class="models-category">
+    <h2 class="category-title">Pre Booking Models</h2>
+</div>
+    <div class="models-grid">
+
+<!-- JAECOO J8 ARDIS -->
+<div class="models-card prebooking" id="models-j8-ardis">
+    <div class="models-header">
+      <h3 class="models-name">JAECOO J8 ARDIS</h3>
+      <p class="models-type">Premium SUV</p>
+      <span class="prebooking-badge">Pre Booking</span>
+    </div>
+  
+    <div class="car-image-container">
+      <img id="j8-ardis-img" src="https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_AWD_Left_Front_30_Exterior_c16d169a84.png&w=3840&q=75" alt="JAECOO J8 ARDIS" class="car-image">
+    </div>
+  
+    <div class="models-price">
+      <div class="price-tag prebooking-price">
+        <span class="price-label">Price</span>
+        <span class="price-amount">IDR 689.900.000</span>
+      </div>
+    </div>
+    <div class="models-specs">
+      <h4 class="specs-title">Specifications</h4>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="spec-label">Max. Power</span>
+          <span class="spec-value">248ps</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Engine</span>
+          <span class="spec-value">2,0TGDI</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Driving Mode</span>
+          <span class="spec-value">7 Mode</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Suspension</span>
+          <span class="spec-value">CDC Magnetic</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Torque</span>
+          <span class="spec-value">385N.m</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Wading Depth</span>
+          <span class="spec-value">600mm</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">0-100km/h</span>
+          <span class="spec-value">8,8s</span>
+        </div>
+      </div>
+      <a href="contact.html?model=J7 SHS" class="btn btn-primary">Test Drive</a>
+    </div>
+  </div>
+  
+  <!-- JAECOO J8 SHS ARDIS -->
+    <div class="models-card prebooking" id="models-j8-shs">
+    <div class="models-header">
+      <h3 class="models-name">JAECOO J8 SHS ARDIS</h3>
+      <p class="models-type">Super Hybrid System</p>
+      <span class="prebooking-badge">Pre Booking</span>
+    </div>
+  
+    <div class="car-image-container">
+      <img id="j8-shs-ardis-img" src="https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_SHS_ARDIS_Left_Front_30_e8629fb069.webp&w=3840&q=75" alt="JAECOO J8 SHS ARDIS" class="car-image">
+    </div>
+  
+    <div class="models-price">
+      <div class="price-tag prebooking-price">
+        <span class="price-label">Price</span>
+        <span class="price-amount">IDR 850.000.000</span>
+      </div>
+    </div>
+    <div class="models-specs">
+      <h4 class="specs-title">Specifications</h4>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="spec-label">Cobined Power</span>
+          <span class="spec-value">395kW</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Max. Range</span>
+          <span class="spec-value">1400km</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Battery Capacity</span>
+          <span class="spec-value">34,46kWh</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Suspension</span>
+          <span class="spec-value">CDC Magnetic</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Torque</span>
+          <span class="spec-value">650N.m</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Wheelbase</span>
+          <span class="spec-value">2.820mm</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">0-100km/h</span>
+          <span class="spec-value">5,4s</span>
+        </div>
+      </div>
+      <a href="contact.html?model=J7 SHS" class="btn btn-primary">Test Drive</a>
+    </div>
+  </div>
+  
+  
+<!-- JAECOO J5 EV Standard -->
+<div class="models-card prebooking">
+    <div class="models-header">
+      <h3 class="models-name">JAECOO J5 EV Standard</h3>
+      <p class="models-type">Full Electric Standard</p>
+      <span class="prebooking-badge">Pre Booking</span>
+    </div>
+  
+    <div class="car-image-container">
+      <img id="j5-ev-premium-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtjT445vHUpRO9w-sKY5sEppvTCZBYR9H2gteahcXU8Bame7V7sNhFsCht8BeuI0fyf4znGTIitqufKS7QmeUTFbW8BEN_2_GOTY1lKFzJPzBejkbg9tlHtdchh1B99MgDg_YAJiGlTpD7_3UJen36yK_c60tD0Sg-seom4c8yUAlL_26yxgybiBe0kcRW/w640-h426-rw/1000544926.jpg" 
+      alt="JAECOO J5 EV Premium" class="car-image">
+    </div>
+  
+    <div class="models-price">
+      <div class="price-tag prebooking-price">
+        <span class="price-label">Pre Booking Price</span>
+        <span class="price-amount">IDR 350.000.000</span>
+      </div>
+    </div>
+  
+    <div class="models-specs">
+      <h4 class="specs-title">Specifications</h4>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="spec-label">Max. Range</span>
+          <span class="spec-value">461km</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Torque</span>
+          <span class="spec-value">288Nm</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">0-100km/h</span>
+          <span class="spec-value">7,7s</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Battery Capacity</span>
+          <span class="spec-value">60,9kWh</span>
+        </div>
+      </div>
+      <a href="contact.html?model=J7 SHS" class="btn btn-primary">Test Drive</a>
+    </div>
+  </div>
+  
+  
+ <!-- JAECOO J5 EV Premium -->
+<div class="models-card prebooking">
+    <div class="models-header">
+      <h3 class="models-name">JAECOO J5 EV Premium</h3>
+      <p class="models-type">Full Electric Premium</p>
+      <span class="prebooking-badge">Pre Booking</span>
+    </div>
+  
+    <div class="car-image-container">
+      <img id="j5-ev-regular-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtjT445vHUpRO9w-sKY5sEppvTCZBYR9H2gteahcXU8Bame7V7sNhFsCht8BeuI0fyf4znGTIitqufKS7QmeUTFbW8BEN_2_GOTY1lKFzJPzBejkbg9tlHtdchh1B99MgDg_YAJiGlTpD7_3UJen36yK_c60tD0Sg-seom4c8yUAlL_26yxgybiBe0kcRW/w640-h426-rw/1000544926.jpg"
+           alt="JAECOO J5 EV Regular" class="car-image">
+    </div>
+  
+    <div class="models-price">
+      <div class="price-tag prebooking-price">
+        <span class="price-label">Pre Booking Price</span>
+        <span class="price-amount">IDR 450.000.000</span>
+      </div>
+    </div>
+  
+    <div class="models-specs">
+      <h4 class="specs-title">Specifications</h4>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="spec-label">Max. Range</span>
+          <span class="spec-value">461km</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Torque</span>
+          <span class="spec-value">288Nm</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">0-100km/h</span>
+          <span class="spec-value">7,7s</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Battery Capacity</span>
+          <span class="spec-value">60,9kWh</span>
+        </div>
+      </div>
+      <a href="contact.html?model=J7 SHS" class="btn btn-primary">Test Drive</a>
+    </div>
+  </div>
+  
+
+        
 <!-- FontAwesome Icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-          <!-- Logo -->
-          <div class="footer-logo">
-            <img src="https://jaecoo.id/_next/image?url=%2Fgrey-logo.png&w=640&q=75" alt="JAECOO Logo" class="footer-logo-img" />
-          </div>
-      
-          <!-- Sosial Media -->
-          <div class="footer-social">
-            <a href="https://www.instagram.com/jaecoo.indonesia" target="_blank" class="social-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@jaecoo.indonesia" target="_blank" class="social-link" aria-label="TikTok">
-              <i class="fab fa-tiktok"></i>
-            </a>
-          </div>
-      
-          <!-- Model Mobil -->
-          <div class="footer-models">
-            <a href="models.html#model-j8-ardis" class="model-card">
-                <div class="model-image model-j8-ardis"></div>
-                <h3 data-translate="model_j8_ardis">JAECOO J8 ARDIS</h3>
-            </a>
-            <a href="models.html#model-j8-shs" class="model-card">
-                <div class="model-image model-j8-shs"></div>
-                <h3 data-translate="model_j8_shs">JAECOO J8 SHS ARDIS</h3>
-            </a>
-            <a href="models.html#model-j7-shs" class="model-card">
-                <div class="model-image model-j7-shs"></div>
-                <h3 data-translate="model_j7_shs">JAECOO J7 SHS</h3>
-            </a>
-        </div>                  
-            <div class="footer-nav">
-                <a href="index.html" class="footer-link" data-translate="footer_home">HOME</a>
-                <a href="super-hybrid.html" class="footer-link" data-translate="footer_super_hybrid">SUPER HYBRID SYSTEM</a>
-                <a href="find-dealer.html" class="footer-link" data-translate="footer_find_dealer">FIND A DEALER</a>
-                <a href="contact.html" class="footer-link" data-translate="footer_contact">CONTACT</a>
-            </div>
-        </div>
-    </footer>
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-wrapper">
+    
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="https://jaecoo.id/_next/image?url=%2Fgrey-logo.png&w=640&q=75" alt="JAECOO Logo" class="footer-logo-img" />
+    </div>
 
-    <script src="assets/js/final-language-system.js"></script>
+    <!-- Social Media -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/jaecoo.indonesia" target="_blank" class="footer-social-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@jaecoo.indonesia" target="_blank" class="footer-social-link" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+
+    <!-- Models -->
+    <div class="footer-models">
+      <a href="models.html#models-j8-ardis" class="footer-models-card">
+        <div class="footer-models-image models-j8-ardis"></div>
+        <h3>JAECOO J8 ARDIS</h3>
+      </a>
+      <a href="models.html#models-j8-shs" class="footer-models-card">
+        <div class="footer-models-image models-j8-shs"></div>
+        <h3>JAECOO J8 SHS ARDIS</h3>
+      </a>
+      <a href="models.html#models-j7-shs" class="footer-models-card">
+        <div class="footer-models-image models-j7-shs"></div>
+        <h3>JAECOO J7 SHS</h3>
+      </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+      <a href="index.html" class="footer-nav-link">HOME</a>
+      <a href="models.html" class="footer-nav-link">MODELS</a>
+      <a href="super-hybrid.html" class="footer-nav-link">SUPER HYBRID SYSTEM</a>
+      <a href="find-dealer.html" class="footer-nav-link">FIND A DEALER</a>
+      <a href="contact.html" class="footer-nav-link">CONTACT</a>
+    </div>
+
+  </div>
+</footer>
+
     <script src="assets/js/main.js"></script>
-    <script>
-        function changeCarColor(modelId, color) {
-            // Remove active class from all color buttons in this model
-            const modelCard = document.querySelector(`#${modelId}-img`).closest('.model-card');
-            const colorBtns = modelCard.querySelectorAll('.color-btn');
-            colorBtns.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked color button
-            const clickedBtn = modelCard.querySelector(`[data-color="${color}"]`);
-            clickedBtn.classList.add('active');
-            
-            // Change car image based on color
-            const carImage = document.getElementById(`${modelId}-img`);
-            
-            // For demo purposes, we'll use filter effects to simulate different colors
-            // In a real implementation, you would have different image URLs for each color
-            switch(color) {
-                case 'silver':
-                    carImage.style.filter = 'hue-rotate(0deg) brightness(1.1) saturate(0.8)';
-                    break;
-                case 'white':
-                    carImage.style.filter = 'hue-rotate(0deg) brightness(1.3) saturate(0.5)';
-                    break;
-                case 'gray':
-                    carImage.style.filter = 'hue-rotate(0deg) brightness(0.8) saturate(0.6)';
-                    break;
-                case 'black':
-                    carImage.style.filter = 'hue-rotate(0deg) brightness(0.6) saturate(0.7)';
-                    break;
-            }
-        }
-
-        // Mobile menu toggle
-        document.getElementById('nav-toggle').addEventListener('click', function() {
-            const navMenu = document.getElementById('nav-menu');
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

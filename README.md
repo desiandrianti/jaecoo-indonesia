@@ -61,17 +61,17 @@ jaecoo-indonesia/
 │
 ├── assets/
 │   ├── css/
-│   │   └── main.css      # Main stylesheet for the website
+│   │   ├── main.css              # Untuk style umum seluruh website
 │   ├── js/
-│   │   ├── main.js       # Main JavaScript file for functionality
-│   │   └── final-language-system.js # Language handling script
+│       ├── main.js               # Script utama
 │
-├── find-dealer.html       # Page for finding dealers
-├── index.html              # Home page
-├── models.html             # Page detailing vehicle models
-├── super-hybrid.html       # Information on the super hybrid technology
-├── contact.html            # Contact page for inquiries
-└── contact-backup.html     # Backup version of the contact page
+│
+├── index.html                   # Beranda
+├── models.html                  # Halaman model kendaraan (gunakan model.css)
+├── find-dealer.html             # Cari dealer
+├── super-hybrid.html            # Teknologi super hybrid
+├── contact.html                 # Kontak
+
 ```
 
 ### Note

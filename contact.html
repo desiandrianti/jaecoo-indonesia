@@ -28,11 +28,6 @@
                         <li class="nav-item"><a href="contact.html" class="nav-link active" data-translate="nav_contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="nav-language">
-                    <span class="lang-active">EN</span>
-                    <span class="lang-divider">|</span>
-                    <span class="lang-option">ID</span>
-                </div>
                 <div class="nav-toggle" id="nav-toggle">
                     <span class="nav-toggle-line"></span>
                     <span class="nav-toggle-line"></span>
@@ -60,13 +55,13 @@
   </section>
   
   <!-- Contact Section -->
-  <section class="contact-info-section" style="padding: 50px 20px; background-color: #f9f9f9; font-family: Arial, sans-serif;">
+  <section class="contact-info-section" style="margin-top: -40px; padding: 20px; background-color: #f9f9f9; font-family: Arial, sans-serif;">
     <div class="container" style="max-width: 1200px; margin: 0 auto;">
-      <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+      <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
   
         <!-- KIRI -->
         <div class="contact-info">
-          <h2 style="font-size: 28px; margin-bottom: 10px; color: #2c5f5d;">GET IN TOUCH</h2>
+          <h2 style="font-size: 28px; margin: -50px 0 10px; color: #2c5f5d;">GET IN TOUCH</h2>
           <p style="margin-bottom: 30px;">Silakan hubungi kami untuk informasi lebih lanjut mengenai produk, test drive, atau layanan purna jual JAECOO Surabaya.</p>
   
           <div class="contact-item" style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -89,7 +84,7 @@
             <div class="contact-icon" style="margin-right: 15px; font-size: 20px; color: #2c5f5d;"><i class="fas fa-clock"></i></div>
             <div>
               <h3 style="margin: 0; font-size: 16px;">Jam Operasional</h3>
-              <p style="margin: 0;">Senin - Minggu, 09.00 - 17.00 WIB</p>
+              <p style="margin: 0;">Senin - Minggu, 08.00 - 17.00 WIB</p>
             </div>
           </div>
   
@@ -108,107 +103,94 @@
           <h2 style="font-size: 24px; margin-bottom: 20px; color: #2c5f5d;">Send Message via WhatsApp</h2>
           <form class="contact-form" id="whatsapp-form">
             <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-              <input type="text" placeholder="NAME" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
-              <input type="text" placeholder="PHONE NUMBER" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+              <input type="text" id="name" placeholder="NAME" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+              <input type="text" id="phone" placeholder="PHONE NUMBER" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
             </div>
             <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-              <select required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; color: #555;">
+              <select id="subject" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px; color: #555;">
                 <option value="">Model</option>
                 <option value="JAECOO J7 SHS">JAECOO J7 SHS</option>
+                <option value="JAECOO J7 SHS">JAECOO J7 AWD</option>
                 <option value="JAECOO J8 SHS ARDIS">JAECOO J8 SHS ARDIS</option>
                 <option value="JAECOO J8 ARDIS">JAECOO J8 ARDIS</option>
+                <option value="JAECOO J8 ARDIS">JAECOO J5 STANDARD</option>
+                <option value="JAECOO J8 ARDIS">JAECOO J5 PREMIUM</option>
               </select>
-              <input type="text" placeholder="LOCATION" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+              <input type="text" id="location" placeholder="LOCATION" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
             </div>
             <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px;">
-                <label style="display: flex; align-items: center; gap: 4px;">
-                  <input type="radio" name="type" value="general"> GENERAL MESSAGE
-                </label>
-                <label style="display: flex; align-items: center; gap: 4px;">
-                  <input type="radio" name="type" value="test"> TEST DRIVE REQUEST
-                </label>
-                <label style="display: flex; align-items: center; gap: 4px;">
-                  <input type="radio" name="type" value="dealer"> DEALERSHIP
-                </label>
-              </div>
-              
-              <textarea placeholder="MESSAGE" rows="5" required 
-                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; margin-bottom: 15px; font-size: 14px;">
-              </textarea>
-              
-              <button type="submit" 
-                style="background-color: #2c5f5d; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;">
-                Kirim ke WhatsApp
-              </button>              
-    </div>
+              <label style="display: flex; align-items: center; gap: 4px;">
+                <input type="radio" name="type" value="GENERAL MESSAGE"> GENERAL MESSAGE
+              </label>
+              <label style="display: flex; align-items: center; gap: 4px;">
+                <input type="radio" name="type" value="TEST DRIVE REQUEST"> TEST DRIVE REQUEST
+              </label>
+              <label style="display: flex; align-items: center; gap: 4px;">
+                <input type="radio" name="type" value="DEALERSHIP"> DEALERSHIP
+              </label>
+            </div>
+            <textarea id="message" placeholder="MESSAGE" rows="5" required 
+              style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; resize: vertical; margin-bottom: 15px; font-size: 14px;"></textarea>
+          
+            <button type="submit" 
+              style="background-color: #2c5f5d; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px;">
+              Kirim ke WhatsApp
+            </button>
+          </form>             
+  </div>
   </section>
   
   
 <!-- FontAwesome Icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-          <!-- Logo -->
-          <div class="footer-logo">
-            <img src="https://jaecoo.id/_next/image?url=%2Fgrey-logo.png&w=640&q=75" alt="JAECOO Logo" class="footer-logo-img" />
-          </div>
-      
-          <!-- Sosial Media -->
-          <div class="footer-social">
-            <a href="https://www.instagram.com/jaecoo.indonesia" target="_blank" class="social-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@jaecoo.indonesia" target="_blank" class="social-link" aria-label="TikTok">
-              <i class="fab fa-tiktok"></i>
-            </a>
-          </div>
-      
-          <!-- Model Mobil -->
-          <div class="footer-models">
-            <a href="models.html#model-j8-ardis" class="model-card">
-                <div class="model-image model-j8-ardis"></div>
-                <h3 data-translate="model_j8_ardis">JAECOO J8 ARDIS</h3>
-            </a>
-            <a href="models.html#model-j8-shs" class="model-card">
-                <div class="model-image model-j8-shs"></div>
-                <h3 data-translate="model_j8_shs">JAECOO J8 SHS ARDIS</h3>
-            </a>
-            <a href="models.html#model-j7-shs" class="model-card">
-                <div class="model-image model-j7-shs"></div>
-                <h3 data-translate="model_j7_shs">JAECOO J7 SHS</h3>
-            </a>
-        </div>                  
-            <div class="footer-nav">
-                <a href="index.html" class="footer-link" data-translate="footer_home">HOME</a>
-                <a href="super-hybrid.html" class="footer-link" data-translate="footer_super_hybrid">SUPER HYBRID SYSTEM</a>
-                <a href="find-dealer.html" class="footer-link" data-translate="footer_find_dealer">FIND A DEALER</a>
-                <a href="contact.html" class="footer-link" data-translate="footer_contact">CONTACT</a>
-            </div>
-        </div>
-    </footer>
 
-    <script>
-        // WhatsApp form integration
-        document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            let whatsappMessage = `Halo JAECOO Surabaya,\n\n`;
-            whatsappMessage += `Nama: ${name}\n`;
-            if (phone) whatsappMessage += `No. HP: ${phone}\n`;
-            if (subject) whatsappMessage += `Perihal: ${subject}\n\n`;
-            whatsappMessage += `Pesan: ${message}`;
-            
-            const encodedMessage = encodeURIComponent(whatsappMessage);
-            const whatsappUrl = `https://wa.me/+6281250249175?text=${encodedMessage}`;
-            
-            window.open(whatsappUrl, '_blank');
-        });
-    </script>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-wrapper">
+    
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="https://jaecoo.id/_next/image?url=%2Fgrey-logo.png&w=640&q=75" alt="JAECOO Logo" class="footer-logo-img" />
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/jaecoo.indonesia" target="_blank" class="footer-social-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@jaecoo.indonesia" target="_blank" class="footer-social-link" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+
+    <!-- Models -->
+    <div class="footer-models">
+      <a href="models.html#models-j8-ardis" class="footer-models-card">
+        <div class="footer-models-image models-j8-ardis"></div>
+        <h3>JAECOO J8 ARDIS</h3>
+      </a>
+      <a href="models.html#models-j8-shs" class="footer-models-card">
+        <div class="footer-models-image models-j8-shs"></div>
+        <h3>JAECOO J8 SHS ARDIS</h3>
+      </a>
+      <a href="models.html#models-j7-shs" class="footer-models-card">
+        <div class="footer-models-image models-j7-shs"></div>
+        <h3>JAECOO J7 SHS</h3>
+      </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+      <a href="index.html" class="footer-nav-link">HOME</a>
+      <a href="models.html" class="footer-nav-link">MODELS</a>
+      <a href="super-hybrid.html" class="footer-nav-link">SUPER HYBRID SYSTEM</a>
+      <a href="find-dealer.html" class="footer-nav-link">FIND A DEALER</a>
+      <a href="contact.html" class="footer-nav-link">CONTACT</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
