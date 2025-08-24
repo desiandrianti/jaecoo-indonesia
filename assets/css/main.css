@@ -241,10 +241,10 @@ body {
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1.5rem;
-    text-align: center;
+    justify-content: flex-end;   /* ✅ selalu di bawah */
+    align-items: flex-start;     /* ✅ selalu di kiri */
+    padding: 0 2rem 4rem 2rem;   /* bawah lebih besar */
+    text-align: left;            /* biar rata kiri */
     z-index: 2;
 }
 
@@ -395,12 +395,16 @@ body {
     z-index: 1;
   }
   
-  .j7-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #ffffff;
-  }
+.j7-content,
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 2rem 4rem 2rem;
+    max-width: 700px;
+}
   
   .j7-title {
     font-size: 3rem;
@@ -2271,5 +2275,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #285e61;
 }
+
 
 
