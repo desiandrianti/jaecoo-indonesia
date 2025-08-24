@@ -266,16 +266,6 @@ body {
         padding-bottom: 2rem;
     }
 
-    .hero-slide {
-        background-position: center bottom; /* ✅ fokus ke bawah di mobile */
-    }
-
-    .hero-overlay {
-        align-items: center;   /* ✅ teks ke tengah */
-        text-align: center;
-        padding: 0 1rem 2rem 1rem;
-    }
-
     .hero-content {
         padding: 0 1.5rem;
         max-width: 90%;
@@ -2282,6 +2272,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #285e61;
 }
+
 
 
 
